@@ -1,0 +1,33 @@
+.section__form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+}
+
+@media (max-width: 767px) {
+    .section__form {
+        grid-template-columns: 1fr;
+    }
+}
+
+.section__input {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.section__addButton {
+    padding: 10px;
+    background-color: hsl(180, 100%, 25%);
+    color: white;
+    border: none;
+    transition: 0.5s;
+}
+
+.section__addButton:hover {
+    background-color: hsl(180, 100%, 30%);
+    transform: scale(1.1);
+}
+
+.section__addButton:active {
+    background-color: hsl(180, 100%, 35%);
+}
