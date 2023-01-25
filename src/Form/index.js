@@ -1,9 +1,9 @@
 import "./style.css";
 
 const Form = () => (
-    <form className="section__form">
-        <input className="section__input" placeholder="Co jest do zrobienia?" />
-        <button className="section__addButton">Dodaj zadanie</button>
+    <form className="form">
+        <input className="form__input" placeholder="Co jest do zrobienia?" />
+        <button className="form__addButton">Dodaj zadanie</button>
     </form>
 );
 

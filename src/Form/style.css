@@ -1,21 +1,21 @@
-.section__form {
+.form {
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
 }
 
 @media (max-width: 767px) {
-    .section__form {
+    .form {
         grid-template-columns: 1fr;
     }
 }
 
-.section__input {
+.form__input {
     padding: 10px;
     border: 1px solid #ddd;
 }
 
-.section__addButton {
+.form__addButton {
     padding: 10px;
     background-color: hsl(180, 100%, 25%);
     color: white;
@@ -23,11 +23,11 @@
     transition: 0.5s;
 }
 
-.section__addButton:hover {
+.form__addButton:hover {
     background-color: hsl(180, 100%, 30%);
     transform: scale(1.1);
 }
 
-.section__addButton:active {
+.form__addButton:active {
     background-color: hsl(180, 100%, 35%);
 }
