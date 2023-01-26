@@ -9,6 +9,7 @@
     color: hsl(180, 100%, 25%);
     background-color: transparent;
     transition: 1s;
+    cursor: pointer;
 }
 
 .buttons__button:hover {
