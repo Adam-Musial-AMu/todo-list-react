@@ -10,13 +10,8 @@ import { useState, useEffect } from 'react'
 function App() {
   const [hideDoneTasks, setHideDoneTasks] = useState(false);
   const [tasks, setTasks] = useState(
-    []
+    JSON.parse(localStorage.getItem("tasks")) || []
   );
-
-  useEffect(() => {
-    const storedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
-    setTasks(storedTasks);
-  }, []);
 
   const toggleHideDoneTasks = () => setHideDoneTasks(hideDoneTasks => !hideDoneTasks);
 
