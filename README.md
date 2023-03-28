@@ -11,6 +11,9 @@ A simple but useful application for scheduling and executing tasks. It was creat
 - Webpack
 - Babel
 - JavaScript
+- useState
+- useEffect
+- localStorage
 - BEM
 - ES6+ features
 - Grid layout
