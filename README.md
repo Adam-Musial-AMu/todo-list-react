@@ -2,17 +2,20 @@
 ## Demo
 https://adam-musial-amu.github.io/todo-list-react/
 ## Description
-A simple but useful application for scheduling and executing tasks. It was created as a practical exercise in a [YouCode](https://www.facebook.com/youcodepl) programming course. This project was created with [Create React App](https://github.com/facebook/create-react-app), as the purpose of the exercise was to practice React JS, ES6+ features such as const, let, and especially arrow functions, as well as CSS (Grid, Flex, BEM).
+A simple but useful application for scheduling and executing tasks. It was created as a practical exercise in a [YouCode](https://www.facebook.com/youcodepl) programming course. This project was created with [Create React App](https://github.com/facebook/create-react-app), as the purpose of the exercise was to practice React JS, ES6+ features such as const, let, and especially arrow functions, as well as CSS (Grid, Flex, BEM - or, in a later phase of the project, styled-components).
 ## Technologies used
 - HTML
 - CSS
 - React JS
 - create-react-app
+- styled-components
 - Webpack
 - Babel
 - JavaScript
 - useState
 - useEffect
+- useRef
+- custom hooks
 - localStorage
 - BEM
 - ES6+ features
