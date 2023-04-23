@@ -43,7 +43,7 @@ export const Button = styled.button`
         border: 3px solid hsl(348, 92%, 15%);
     }
 
-    ${({done}) => done && css`
+    ${({ done }) => done && css`
         background-color: hsl(120, 100%, 20%);
 
         &:hover {
