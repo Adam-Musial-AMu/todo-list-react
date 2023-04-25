@@ -1,10 +1,10 @@
-import { Div, Button } from "./styled";
+import { Container, Button } from "./styled";
 
 const Buttons = ({ tasks, hideDoneTasks, toggleHideDoneTasks, markAllTasksDone }) => (
 
     tasks.length > 0 && (
 
-        <Div>
+        <Container>
             <Button
                 onClick={toggleHideDoneTasks}>
                 {hideDoneTasks ? "Pokaż" : "Ukryj"}  ukończone
@@ -14,7 +14,7 @@ const Buttons = ({ tasks, hideDoneTasks, toggleHideDoneTasks, markAllTasksDone }
                 disabled={tasks.every(({ done }) => done)}>
                 Ukończ wszystkie
             </Button>
-        </Div>
+        </Container>
     )
 );
 
