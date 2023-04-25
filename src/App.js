@@ -4,16 +4,12 @@ import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
-import { useState } from 'react'
 import { useTasks } from "./useTasks";
 
 
 function App() {
-  const { tasks, removeTask, addNewTask, toggleTaskDone, markAllTasksDone } = useTasks();
-  const [hideDoneTasks, setHideDoneTasks] = useState(false);
-  const toggleHideDoneTasks = () => setHideDoneTasks(hideDoneTasks => !hideDoneTasks);
-
-
+  const { tasks, hideDoneTasks, toggleHideDoneTasks, removeTask, addNewTask, toggleTaskDone, markAllTasksDone } = useTasks();
+  
   return (
     <Container>
       <Header title="Lista zadań" />
