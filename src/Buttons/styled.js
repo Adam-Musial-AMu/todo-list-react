@@ -8,20 +8,24 @@ export const Container = styled.div`
 export const Button = styled.button`
     border: none;
     margin: 0 0 0 20px;
-    color: hsl(180, 100%, 25%);
+    color: ${({ theme }) => theme.color.teal};
     background-color: transparent;
     transition: 1s;
     cursor: pointer;
 
     &:hover {
-        color: hsl(180, 100%, 35%); 
+        filter: brightness(130%); 
+    }
+
+    &:active {
+        filter: brightness(150%);
     }
 
     &:disabled {
-        color: #ccc;
+        color: ${({ theme }) => theme.color.silver};
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         flex-basis: 100%;
         margin: 10px;
     }

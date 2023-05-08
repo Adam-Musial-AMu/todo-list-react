@@ -9,7 +9,7 @@ export const Item = styled.li`
     grid-template-columns: auto 1fr auto;
     grid-gap: 20px;
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid ${({ theme }) => theme.color.alto};
     align-items: center;
 
     ${({ hidden }) => hidden && css`
@@ -28,31 +28,31 @@ export const Content = styled.span`
 export const Button = styled.button`
     height: 30px;
     width: 30px;
-    background-color: hsl(348, 83%, 47%);
+    background-color: ${({ theme }) => theme.color.crimson};
     color: white;
     border: none;
     cursor: pointer;
 
     &:hover {
-        background-color: hsl(348, 83%, 57%);
+        filter: brightness(130%);
         transition: 1s; 
     }
 
     &:active {
-        background-color: hsl(348, 83%, 67%);
-        border: 3px solid hsl(348, 92%, 15%);
+        filter: brightness(130%);
+        border: 3px solid ${({ theme }) => theme.color.black};
     }
 
     ${({ done }) => done && css`
-        background-color: hsl(120, 100%, 20%);
+        background-color: ${({ theme }) => theme.color.forestGreen};
 
         &:hover {
-            background-color: hsl(120, 100%, 30%); 
+            filter: brightness(130%); 
         }
 
         &:active {
-            background-color: hsl(120, 100%, 40%);
-            border: 3px solid hsl(120, 95%, 8%);
+            filter: brightness(150%);
+            border: 3px solid ${({ theme }) => theme.color.black};
         }
     `};
 `;

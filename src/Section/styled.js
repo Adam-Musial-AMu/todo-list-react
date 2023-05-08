@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Segment = styled.section`
     margin: 10px;
-    background-color: white;
+    background-color: ${({ theme }) => theme.color.white};
 `;
 
 export const Header = styled.header`
@@ -14,7 +14,7 @@ export const Header = styled.header`
     align-items: center;
     padding: 20px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         grid-template-columns: 1fr;
     }
 `;
@@ -25,5 +25,5 @@ export const Title = styled.h2`
 
 export const Content = styled.div`
     padding: 20px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid ${({ theme }) => theme.color.alto};
 `;
