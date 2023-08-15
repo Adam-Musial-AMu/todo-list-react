@@ -27,7 +27,7 @@ A simple but useful application for scheduling and executing tasks. It was creat
 - @media queries
 
 ## Interface view
-![TO-DO-LIST](public/interface_view.png)
+![TO-DO-LIST](interface_view.png)
 
 # Getting Started with Create React App
 
