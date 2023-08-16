@@ -7,7 +7,6 @@ import { Container } from "../../common/Container/styled";
 
 
 function Tasks() {
-
   return (
     <Container>
       <Header title="Lista zadań" />
