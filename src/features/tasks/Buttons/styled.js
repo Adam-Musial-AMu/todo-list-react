@@ -23,6 +23,7 @@ export const Button = styled.button`
 
     &:disabled {
         color: ${({ theme }) => theme.color.silver};
+        cursor: auto;
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
