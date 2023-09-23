@@ -1,7 +1,8 @@
-import { HashRouter, Route, Switch, Link, Redirect } from "react-router-dom/cjs/react-router-dom.min";
+import { HashRouter, Route, Switch, Redirect } from "react-router-dom/cjs/react-router-dom.min";
 import TasksPage from "./features/tasks/TasksPage";
 import TaskPage from "./features/tasks/TaskPage";
 import AuthorPage from "./features/author/AuthorPage";
+import { StyledNavLink } from "./styled";
 
 function App() {
     return (
@@ -9,14 +10,14 @@ function App() {
             <nav>
                 <ul>
                     <li>
-                        <Link to="/zadania">
+                        <StyledNavLink to="/zadania">
                             Zadania
-                        </Link>
+                        </StyledNavLink>
                     </li>
                     <li>
-                        <Link to="/autor">
+                        <StyledNavLink to="/autor">
                             O autorze
-                        </Link>
+                        </StyledNavLink>
                     </li>
                 </ul>
             </nav>
