@@ -3,11 +3,12 @@ import Input from "../../Input/styled";
 import { useHistory } from "react-router-dom/cjs/react-router-dom";
 import { Wrapper } from "./styled";
 import searchQueryParamName from "../searchQueryParamName";
+import { useQueryParameter } from "../queryParameters";
 
-export const Search = () => {
+export default () => {
     const location = useLocation();
     const history = useHistory();
-    const query = (new URLSearchParams(location.search)).get(searchQueryParamName);
+    const query = useQueryParameter(searchQueryParamName);
 
     const onInputChange = ({ target }) => {
         const searchParams = (new URLSearchParams(location.search));
@@ -30,5 +31,3 @@ export const Search = () => {
         </Wrapper>
     );
 };
-
-export default Search;
