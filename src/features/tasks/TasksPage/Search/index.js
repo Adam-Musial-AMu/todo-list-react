@@ -1,25 +1,20 @@
-import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 import Input from "../../Input/styled";
-import { useHistory } from "react-router-dom/cjs/react-router-dom";
 import { Wrapper } from "./styled";
 import searchQueryParamName from "../searchQueryParamName";
-import { useQueryParameter } from "../queryParameters";
+import { useQueryParameter, useReplaceQueryParameter } from "../queryParameters";
 
-export default () => {
-    const location = useLocation();
-    const history = useHistory();
+export const Search = () => {
+
     const query = useQueryParameter(searchQueryParamName);
 
-    const onInputChange = ({ target }) => {
-        const searchParams = (new URLSearchParams(location.search));
+    const replaceQueryParameters = useReplaceQueryParameter();
 
-        if (target.value.trim() === "") {
-            searchParams.delete(searchQueryParamName);
-        } else {
-            searchParams.set(searchQueryParamName, target.value);
-        }
-        history.push(`${location.pathname}?${searchParams.toString()}`);
-    }
+    const onInputChange = ({ target }) => {
+        replaceQueryParameters({
+            key: searchQueryParamName,
+            value: target.value.trim() !== "" ? target.value : undefined,
+        });
+    };
 
     return (
         <Wrapper>
@@ -31,3 +26,5 @@ export default () => {
         </Wrapper>
     );
 };
+
+export default Search;
