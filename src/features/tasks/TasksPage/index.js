@@ -1,10 +1,11 @@
 import Form from "./Form";
 import TasksList from "./TasksList";
-import Buttons from "./Buttons";
+import HideDoneButtons from "./HideDoneButtons";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Search from "./Search";
 import { Container } from "../../../common/Container/styled";
+import ExampleButton from "./ExampleButton";
 
 
 function TasksPage() {
@@ -15,6 +16,7 @@ function TasksPage() {
       <Section
         title="Dodaj nowe zadanie"
         content={<Form />}
+        extraHeaderContent={<ExampleButton />}
       />
       <Section
         title="Wyszukiwarka"
@@ -23,7 +25,7 @@ function TasksPage() {
       <Section
         title="Lista zadań"
         content={<TasksList />}
-        extraHeaderContent={<Buttons />}
+        extraHeaderContent={<HideDoneButtons />}
       />
     </Container>
   )
