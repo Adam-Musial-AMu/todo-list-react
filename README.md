@@ -2,29 +2,39 @@
 ## Demo
 https://adam-musial-amu.github.io/todo-list-react/
 ## Description
-A simple but useful application for scheduling and executing tasks. It was created as a practical exercise in a [YouCode](https://www.facebook.com/youcodepl) programming course. This project was created with [Create React App](https://github.com/facebook/create-react-app), as the purpose of the exercise was to practice React JS, ES6+ features such as const, let, and especially arrow functions, as well as CSS (Grid, Flex, BEM - or, in a later phase of the project, styled-components). Redux is responsible for the state of the application.
-## Technologies used
-- HTML
-- CSS
-- React JS
-- create-react-app
-- Redux
-- @reduxjs/toolkit
-- react-redux
-- styled-components
-- Webpack
-- Babel
-- JavaScript
-- useState
-- useEffect
-- useRef
-- custom hooks
-- localStorage
-- BEM
-- ES6+ features
-- Grid layout
-- Flex
-- @media queries
+A simple but useful application for scheduling and executing tasks. It was created as a practical exercise in a [YouCode](https://www.facebook.com/youcodepl) programming course. This project was created with [Create React App](https://github.com/facebook/create-react-app), as the purpose of the exercise was to practice React JS, ES6+ features, especially arrow functions, as well as CSS (Grid, Flex, BEM - or, in a later phase of the project, styled-components). Redux is responsible for the state of the application.
+## Technologies Used
+
+- Frontend Technologies
+  - HTML
+  - CSS
+  - JavaScript (ES6+ features)
+
+  - React JS
+    - React-Router
+    - Redux
+    - Redux-Saga
+    - @reduxjs/toolkit
+    - react-redux
+    - JS-generators
+    - useState
+    - useEffect
+    - useRef
+    - useLocation
+    - useHistory
+    - custom hooks
+    - localStorage
+    - styled-components
+    - create-react-app
+    - Webpack
+    - Babel
+
+  - CSS Techniques
+    - Grid layout
+    - Flexbox
+    - @media queries
+    - BEM methodology
+
 
 ## Interface view
 ![TO-DO-LIST](interface_view.png)
