@@ -5,17 +5,23 @@ import styled from "styled-components";
 export const StyledNavLink = styled(NavLink)`
     color: white;
     text-decoration: none;
-    &.active{
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &.active {
       font-weight: 700;
     } ;
 `;
 
-export const Navigation = styled.ul`
+export const Nav = styled.ul`
     display: flex;
     align-items: center;
     gap: 20px;
     background-color: ${({ theme }) => theme.color.teal};
     padding: 20px;
+    margin: 0;
     list-style-type: none;
 
     @media (max-width: 767px) {
