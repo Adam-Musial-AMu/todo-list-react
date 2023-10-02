@@ -6,7 +6,7 @@ import {
 } from "../../tasksSlice";
 
 
-const ExampleButton = () => {
+const FetchExampleButton = () => {
     const dispatch = useDispatch();
     const isLoading = useSelector(selectIsLoading);
 
@@ -21,4 +21,4 @@ const ExampleButton = () => {
     )
 }
 
-export default ExampleButton;
+export default FetchExampleButton;

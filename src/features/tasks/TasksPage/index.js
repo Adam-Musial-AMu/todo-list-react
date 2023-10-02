@@ -5,7 +5,7 @@ import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Search from "./Search";
 import { Container } from "../../../common/Container/styled";
-import ExampleButton from "./ExampleButton";
+import ExampleButton from "./FetchExampleButton";
 
 
 function TasksPage() {
