@@ -7,7 +7,6 @@ export const useQueryParameter = (searchQueryParamName) => {
 }
 
 export const useReplaceQueryParameter = () => {
-
     const location = useLocation();
     const history = useHistory();
 
