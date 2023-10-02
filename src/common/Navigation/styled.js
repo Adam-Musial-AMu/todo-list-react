@@ -7,7 +7,7 @@ export const StyledNavLink = styled(NavLink)`
     text-decoration: none;
 
     &:hover {
-        text-decoration: underline;
+        border-bottom: 1px solid;
     }
 
     &.active {
@@ -17,10 +17,9 @@ export const StyledNavLink = styled(NavLink)`
 
 export const Nav = styled.ul`
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
     background-color: ${({ theme }) => theme.color.teal};
-    padding: 20px;
     margin: 0;
     list-style-type: none;
 
@@ -30,22 +29,9 @@ export const Nav = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  &:first-child {
-    margin-left: auto;
-  }
+    margin: 20px;
 
-  &:last-child {
-    margin-right: auto; 
-  }
-
-
-  @media (max-width: 767px ) {
-    &:first-child {
-      margin: auto;
+    @media (max-width: 767px ) {
+      margin: 10px;
     }
-  
-    &:last-child {
-      margin: auto; 
-    }
-  }
 `;  
